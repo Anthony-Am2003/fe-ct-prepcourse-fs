@@ -26,6 +26,11 @@ function sumarArray(arrayOfNumbers, cb) {
    // Este resultado debes pasárselo como argumento al callback recibido.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
+   var sumaNumeros = 0;
+   for(let i = 0; i<arrayOfNumbers.length; i++){
+      sumaNumeros += arrayOfNumbers[i];
+   }
+   cb(sumaNumeros);
 }
 
 function forEach(array, cb) {
@@ -33,6 +38,9 @@ function forEach(array, cb) {
    // Debes iterar sobre el arreglo, y por cada elemento ejecutar el callback.
    // Debes pasarle el elemento como argumento al callback.
    // Tu código:
+   for(var i = 0; i<array.length; i++){
+      cb(array[i])
+   }
 }
 
 function map(array, cb) {
