@@ -145,7 +145,7 @@ describe('JAVASCRIPT II', function () {
          );
       });
       it("Debe retornar 'Hay negativos' si alguno de los argumentos es negativo", function () {
-         expect(operadoresLogicos(-1, 50, 2)).toBe('Hay negativos');
+         expect(operadoresLogicos(-1, 50, 3)).toBe('Hay negativos');
       });
       it('Debe retornar (num3 + 1) si num3 es mayor que num1 y num2', function () {
          expect(operadoresLogicos(1, 3, 10)).toBe(11);
